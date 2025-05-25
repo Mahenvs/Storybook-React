@@ -1,0 +1,28 @@
+.stack-storybook{
+    padding: 1em;
+    border:1px solid;
+
+}
+.stack{
+    padding: 1em;
+    border:0.5px solid;
+    border-color: aquamarine;
+    background-color: aquamarine;
+}
+.stack-vertical{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+}
+
+.stack-horizontal{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.stack-wrap{
+    flex-wrap: wrap;
+}
+

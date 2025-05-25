@@ -1,0 +1,36 @@
+.storybook-custom-button{
+    border:0;
+    border-radius: 2em;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    display: inline-block;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.storybook-custom-button-warning{
+    background-color: yellow;
+    color:rgb(22, 17, 17);
+}
+.storybook-custom-button-success{
+    background-color: green;
+    color:rgb(217, 209, 209);
+}
+.storybook-custom-button-info{
+    background-color: skyblue;
+    color:rgb(22, 8, 8);
+}
+
+.storybook-custom-button-small{
+    font-size: small
+}
+
+.storybook-custom-button-medium{
+    font-size: medium;
+}
+.storybook-custom-button-large{
+    font-size: large;
+}

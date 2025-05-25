@@ -1,0 +1,23 @@
+.input-storybook {
+  display: block;
+  width: 400px;
+  border: 1px solid;
+  border-color: inherit;
+  background-color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.25rem;
+  padding: 0.5em;
+}
+.input-storybook-small {
+  height: 1.4rem;
+  font-size: 0.875rem;
+}
+.input-storybook-medium {
+  height: 1.8em;
+  font-size: 1rem;
+}
+.input-storybook-large {
+  height: 2em;
+  font-size: 1.25rem;
+}
