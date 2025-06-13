@@ -3,7 +3,7 @@ import { StoryObj } from "@storybook/react";
 import PatientCard from "./Patient";
 
 const meta = {
-  title: "Patient Card",
+  title: "Components/Patient Card",
   component: PatientCard,
   tags: ["autodocs"],
   argTypes: {
@@ -21,7 +21,7 @@ export default meta;
 type Story = StoryObj<typeof PatientCard>;
 export const NewPatient: Story = {
   args: {
-    name: "John",
+    name: "Shyam",
     age: 25,
     status: "New Patient",
     gender: "Male",
@@ -31,7 +31,7 @@ export const NewPatient: Story = {
 
 export const Deceased: Story = {
   args: {
-    name: "Jane Smith",
+    name: "Kareena",
     age: 72,
     gender: "Female",
     status: "Deceased",
@@ -41,7 +41,7 @@ export const Deceased: Story = {
 
 export const Active: Story = {
   args: {
-    name: "John Doe",
+    name: "Smith",
     age: 45,
     gender: "Male",
     status: "Active",
