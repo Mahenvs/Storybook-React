@@ -1,4 +1,5 @@
 import Stack from "./Stack";
+import { within, expect } from "@storybook/test";
 
 const meta = {
   title: "Stack",
@@ -22,6 +23,16 @@ export const VerticalStack = {
     stackLength: 5,
     wrap: "wrap",
     gap: "5",
+  },
+  play: async ({ canvasElement, args }) => {
+    const canvas = within(canvasElement);
+    // Check that the Stack renders the correct number of children
+    const stackItems = canvas.getAllByTestId("stack-item");
+    expect(stackItems.length).toBe(args.stackLength);
+
+    const stack = canvas.getByTestId("stack-root");
+    expect(stack).toHaveClass("stack-vertical");
+    expect(stack).toHaveClass("stack-wrap");
   },
 };
 export const HorizontalStack = {

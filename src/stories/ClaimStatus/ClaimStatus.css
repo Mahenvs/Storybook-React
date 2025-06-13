@@ -1,0 +1,102 @@
+/* ========== Container Layout ========== */
+.timeline-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.timeline-container.vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.timeline-container.horizontal {
+  flex-direction: row;
+  align-items: center;
+}
+
+/* ========== Timeline Item ========== */
+.timeline-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.timeline-container.vertical .timeline-item {
+  margin-bottom: 30px; /* Space for vertical line below dot */
+}
+
+.timeline-container.horizontal .timeline-item {
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+/* ========== Status Dot ========== */
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gray;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.timeline-container.horizontal .status-dot {
+  position: relative;
+  margin: 0 auto 6px auto;
+}
+
+/* ========== Label ========== */
+.status-label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.timeline-container.horizontal .status-label {
+  margin-left: 0;
+  text-align: center;
+}
+
+/* ========== Date ========== */
+.status-date {
+  font-size: 12px;
+  color: gray;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.timeline-container.horizontal .status-date {
+  margin-left: 0;
+  text-align: center;
+}
+
+/* ========== Connector Lines ========== */
+.timeline-line.vertical {
+  position: relative;
+  width: 2px;
+  height: 30px;
+  background-color: lightgray;
+  margin-left: 5px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
+.timeline-line.vertical.filled {
+  background-color: green;
+}
+
+.timeline-line.horizontal {
+  position: relative;
+  width: 40px;
+  height: 2px;
+  background-color: lightgray;
+  align-self: center;
+}
+
+.timeline-line.horizontal.filled {
+  background-color: green;
+}

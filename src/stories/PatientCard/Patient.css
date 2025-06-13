@@ -1,0 +1,66 @@
+.patient-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  background-color: #fff;
+
+}
+
+.patient-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.patient-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.patient-avatar {
+  background-color: #eee;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.patient-info h3 {
+  margin: 0;
+}
+
+.patient-status {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.status-label {
+  font-weight: bold;
+}
+
+/* Variants */
+.status-active .status-label {
+  color: #008000;
+  box-shadow: 1px 1px 5px  green;
+  padding: 2px 4px;
+}
+
+.status-deceased .status-label {
+  color: red;
+  box-shadow: 1px 1px 5px  tomato;
+  padding: 2px 4px;
+}
+
+.status-new .status-label {
+  color: blue;
+  box-shadow: 1px  1px 5px  blue;
+  padding: 2px 4px;
+}

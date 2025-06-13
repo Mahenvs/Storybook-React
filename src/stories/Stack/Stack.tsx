@@ -15,6 +15,7 @@ const Stack = ({
   stackLength = stackLength < 0 ? 2 : stackLength;
   return (
     <div
+      data-testid="stack-root"
       className={[
         orientation === "vertical" ? "stack-vertical" : "stack-horizontal",
         wrap === "wrap" ? "stack-wrap" : "",
@@ -25,7 +26,7 @@ const Stack = ({
       {...props}
     >
       {Array.from({ length: stackLength }, (_, index) => (
-        <span className="stack " key={index}></span>
+        <span data-testid="stack-item" className="stack " key={index}></span>
       ))}
     </div>
   );
